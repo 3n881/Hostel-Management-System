@@ -13,54 +13,93 @@ else{
     header("location:index.php");
 }
 ?>
+<table class="signup-container mx-auto">
+
+<tr>
+  <th colspan="2" style="text-align: center; padding-top:15px;">
+
 <h2>ELETRICAL </h2>
+</th>
+  </tr>
 
 <form method="post">
 <!-- <p>The <strong>input type="radio"</strong> defines a radio button:</p> -->
-<div>
-            <label for="rmno">ENTER ROOM NO :</label><br>
-            <input type="text" id="rmno" name="rmno">
-        </div>
 
-<p>1: FAN WORKING PROPERLY</p>
+<tr>
+      <td style="text-align: right; padding-top:15px;">   <label for="rmno">ENTER ROOM NO :</label></td>
+      <td style="padding-top:15px; padding-left:5px;">
+            <input type="text" id="rmno" name="rmno">
+            </td>
+    </tr>
+        
+
+<tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;"><p>1: FAN WORKING PROPERLY</p></td>
+    </tr>
+     <tr>
+      <td colspan="2" style="text-align: center;">
   <input type="radio" id="basin" name="r1" value="YES">
-  <label for="basin">yes</label><br>
+  <label for="basin">yes</label>
   <input type="radio" id="basin" name="r1" value="NO">
-  <label for="basin">no</label><br><br>
+  <label for="basin">no</label></td>
+    </tr>
  
   
 
 
-<p>2: TUBELIGHT WORKING </p>
+<tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;"><p>2: TUBELIGHT WORKING </p></td>
+    </tr>
+     <tr>
+      <td colspan="2" style="text-align: center;">
 
   <input type="radio" id="shower" name="r2" value="YES">
-  <label for="shower">yes</label><br>
+  <label for="shower">yes</label>
   <input type="radio" id="shower" name="r2" value="NO">
-  <label for="shower">no</label><br><br>
+  <label for="shower">no</label></td>
+    </tr>
  
   
 
 
-<p>3: SWITCH WORKING</p>
+<tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;"><p>3: SWITCH WORKING</p></td>
+    </tr>
+     <tr>
+      <td colspan="2" style="text-align: center;">
 
   <input type="radio" id="comode" name="r3" value="YES">
-  <label for="comode">yes</label><br>
+  <label for="comode">yes</label>
   <input type="radio" id="comode" name="r3" value="NO">
-  <label for="comode">no</label><br><br>
+  <label for="comode">no</label></td>
+    </tr>
  
   
 
 
-<p>4: ANY CIRCUIT DAMAGE</p>
+<tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;"><p>4: ANY CIRCUIT DAMAGE</p></td>
+    </tr>
+     <tr>
+      <td colspan="2" style="text-align: center;">
   <input type="radio" id="other" name="r4" value="YES">
-  <label for="other">yes</label><br>
+  <label for="other">yes</label>
   <input type="radio" id="other" name="r4" value="NO">
-  <label for="other">no</label><br><br>
+  <label for="other">no</label></td>
+    </tr>
  
-  
-  <label for="comment">IN detail query:</label>
-  <textarea class="form-control" rows="10" COLS="50" id="query" name="text"></textarea>
-  <input type="submit" value="Submit" name="submit" class="btn btn-primary">
+<tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;">  
+  <label for="comment">IN detail query:</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+  <textarea class="form-control" rows="4" COLS="80" id="query" name="text"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;">
+  <input type="submit" value="Submit" name="submit" class="btn btn-primary"></td>
+    </tr>
 </form>
 <div>
 </div>

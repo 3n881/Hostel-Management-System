@@ -65,3 +65,6 @@ input{
     display: inline-block;
     border-radius: 10px;
 }
+.signup-container{
+    padding-left: 500px;
+}

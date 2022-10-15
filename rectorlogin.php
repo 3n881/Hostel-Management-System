@@ -2,14 +2,21 @@
 include("header.php");
 session_start();
 ?>
-<div class="login-container">
-    <form method="post">
-      <input type="text" placeholder="email" name="email"><br>
-      <input type="text" placeholder="password" name="password"><br>
+<table class="signup-container mx-auto">
+  <tr><th colspan="2" style="text-align: center;"> <h1>Log In</h1></th></tr>
+  <tr><td colspan="2"style="text-align: center;"> <p>Please enter credentials to login.</p></td></tr>
+  <hr>
+  <form method="post">
+    <tr><td>   <label for="email"><b>Email</b></label></td>
+    <td>
+      <input type="text" placeholder="email" name="email"><br></td></tr>
+      <tr><td>   <label for="password"><b>Password</b></label></td>
+    <td>
+      <input type="text" placeholder="password" name="password"><br></td></tr>
 
-      <input type="submit" value="Login" name="submit" class="btn btn-primary">
+      <tr><td colspan="2" style="text-align: center; padding-top: 10px;"> <input type="submit" value="Login" name="submit" class="btn btn-primary"></td></tr>
     </form>
-  </div>
+    </table>
 
   <?php
   if(isset($_POST['submit']))

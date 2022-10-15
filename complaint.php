@@ -13,19 +13,38 @@ else{
     header("location:index.php");
 }
 ?>
-<form method="post">
-<div>
-    <h1>COMPLAINTS</h1>
-            <label for="rmno">ENTER ROOM NO :</label><br>
-            <input type="text" id="rmno" name="rmno">
-        </div>
+<table class="signup-container mx-auto">
 
-<div>
-<label for="comment">   ANY OTHER COMPLAINT:</label>
-<textarea class="form-control" rows="10" cols="50" id="query" name="text"></textarea>
-<input type="submit" value="Submit" name="submit" class="btn btn-primary">
-</div>
+<tr>
+  <th colspan="2" style="text-align: center; padding-top:15px;">
+
+  <h2>COMPLAINTS</h2>
+  </th>
+  </tr>
+  <form method="post">
+  <tr>
+      <td style="text-align: right; padding-top:15px;">
+            <label for="rmno">ENTER ROOM NO :</label></td>
+      <td style="padding-top:15px; padding-left:5px;">
+            <input type="text" id="rmno" name="rmno">
+            </td>
+    </tr>
+        
+
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;"> 
+<label for="comment">   ANY OTHER COMPLAINT:</label></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+<textarea class="form-control" rows="4" cols="80" id="query" name="text"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding-top:15px;">
+<input type="submit" value="Submit" name="submit" class="btn btn-primary"></td>
+    </tr>
 </form>
+</table>
 <?php
 if(isset($_POST['submit'])){
   $user = $_GET['un'];
